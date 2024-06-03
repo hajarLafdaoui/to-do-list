@@ -17,7 +17,7 @@ function display(){
         localStorage.setItem('content', JSON.stringify(arr));
 
         // DISPLAY DATA
-        console.log(arr);
+        // console.log(arr);
 
         // Clear the table before adding new rows
         table.innerHTML = '';
@@ -31,7 +31,8 @@ function display(){
             var html ='';
             html += `
                 <td>
-                    <input class='inputTask' data-index="${index}" type="text" style='display:none;' value="${element.content}">                    <span class='spanTask'>${element.content}</span>
+                    <input class='inputTask' data-index="${index}" type="text" style='display:none;' value="${element.content}">
+                    <span class='spanTask'>${element.content}</span>
                 </td>
             `;
             tdTask.innerHTML = html;
